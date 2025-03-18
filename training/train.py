@@ -12,8 +12,8 @@ from logger_config import logger, set_log_file
 # Configure Logging
 
 # Set log file for the training process
-set_log_file("training_logs.log")
-
+set_log_file("training.log")
+logging = logger 
 # 🔹 Function to Compute Class Weights
 def compute_class_weights(y):
     """
