@@ -2,15 +2,18 @@ import os
 import numpy as np
 import pandas as pd
 import pickle
-import logging
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.utils.class_weight import compute_class_weight
 import lightgbm as lgb
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from data_loader import *
+from logger_config import logger, set_log_file
+# Configure Logging
 
-logging.basicConfig(filename='training/train.log', level=logging.INFO, format="%(levelname)s - %(asctime)s - %(module)s - %(funcName)s - %(message)s")
+# Set log file for the training process
+set_log_file("training_logs.log")
+
 # 🔹 Function to Compute Class Weights
 def compute_class_weights(y):
     """
