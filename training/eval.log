@@ -1,0 +1,14 @@
+INFO - 2025-03-18 12:50:12,347 - evaluation - main - Precision: 0.9690
+INFO - 2025-03-18 12:50:12,347 - evaluation - main - Recall: 0.9303
+INFO - 2025-03-18 12:50:12,347 - evaluation - main - F1 Score: 0.9492
+INFO - 2025-03-18 12:50:12,347 - evaluation - main - Accuracy: 0.9503
+INFO - 2025-03-18 12:50:12,347 - evaluation - main - Classification Report:
+INFO - 2025-03-18 12:50:12,348 - evaluation - main -               precision    recall  f1-score   support
+
+     Class 0       0.93      0.97      0.95   1289169
+     Class 1       0.97      0.93      0.95   1289169
+
+    accuracy                           0.95   2578338
+   macro avg       0.95      0.95      0.95   2578338
+weighted avg       0.95      0.95      0.95   2578338
+
